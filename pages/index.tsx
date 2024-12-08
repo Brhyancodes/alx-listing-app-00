@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Card from '@/styles/components/common/card';
+import Card from '@/styles/components/common/Card';
 import Button from '@/styles/components/common/Button';
 
 
