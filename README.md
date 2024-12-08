@@ -1,40 +1,44 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# ALX Listing App
 
-## Getting Started
+## Project Description
 
-First, run the development server:
+The **ALX Listing App** is a Next.js application designed to replicate the functionality of an Airbnb listing page. This project aims to provide a clean and responsive user interface for displaying property listings, allowing users to interact with various features such as booking and viewing property details. The primary goals of this project include:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Creating a scalable and maintainable codebase using modern web technologies.
+- Implementing reusable components for a consistent user experience.
+- Ensuring type safety and code consistency with TypeScript interfaces.
+- Organizing assets and code for easy access and maintenance.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Project Structure
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+The project is organized into several key directories, each serving a specific purpose:
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+- **`components/`**: This directory contains reusable UI components that can be used throughout the application. For example:
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+  - **`common/`**: Includes components like `Card.tsx` for displaying property information and `Button.tsx` for action buttons.
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **`interfaces/`**: This directory defines TypeScript interfaces that ensure type safety across the application. It includes interfaces for component props, such as `CardProps` and `ButtonProps`, which help maintain consistency in data structures.
 
-## Learn More
+- **`constants/`**: This directory stores reusable constants, such as API URLs, configuration settings, and UI text. This helps in managing values that may need to be updated or reused across different parts of the application.
 
-To learn more about Next.js, take a look at the following resources:
+- **`public/assets/`**: This directory contains static assets like images and SVGs that are used in the application. Keeping assets organized in this folder makes it easier to manage and reference them in the project.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+- **`styles/`**: This directory contains global styles and Tailwind CSS configurations to ensure a consistent look and feel across the application.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **`pages/`**: This directory contains the Next.js pages, including the main entry point of the application (`index.tsx`).
 
-## Deploy on Vercel
+## Running the Project Locally
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+To run the ALX Listing App locally, follow these steps:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+1. **Clone the repository**:
+
+   ```bash
+   git clone <repository-url>
+   cd alx-listing-app
+
+   ```
+
+2. **Install the dependencies and run the development server:**
+   npm install && npm run dev
+3. **Open your browser** and navigate to http://localhost:3000 to view the application
