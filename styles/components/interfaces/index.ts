@@ -1,3 +1,5 @@
+import React from 'react';
+
 export interface Location {
   city: string;
   country: string;
@@ -14,4 +16,13 @@ export interface Property {
   amenities: string[];
   maxGuests: number;
   hostName: string;
+}
+
+export interface ButtonProps {
+  children: React.ReactNode;
+  onClick?: () => void;
+  variant?: 'primary' | 'secondary' | 'danger';
+  className?: string;
+  disabled?: boolean;
+  type?: 'button' | 'submit' | 'reset';
 }
